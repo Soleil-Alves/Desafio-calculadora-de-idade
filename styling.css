@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightgrey;
+}
+.container {
+    background-color: white;
+    width: 420px;
+    max-width: 80%;
+    padding: 30px;
+    position: relative;
+    border-radius: 20px;
+}
+input {
+    width: 70px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid white;
+    outline: none;
+}
+input:focus {
+    border: 2px solid purple;
+}
+small {
+    color: red;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.submit-btn{
+    cursor: pointer;
+    width:70px;
+    height: 70px;
+    background-color: purple;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+}
+.output span {
+    font-size: 2.80rem;
+    color: purple;
+    font-style: italic;
+}
+.inputCont{
+    display:flex; 
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.inputFlex {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    input {
+        width: 40%;
+    }
+    .output span {
+        font-size: 40px;
+    }
+    .submit-btn {
+        width: 30px;
+        height: 40px;
+        right: 40%;
+        top: 110px;
+    }
+}
